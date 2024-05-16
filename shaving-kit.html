@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shaving-kit.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">SHAVING KIT</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Barbasol.jpg" alt="Barbasol">
+        <div class="product-details">
+          <h3>Barbasol</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Barbasol', -1)">-</button>
+            <input type="number" id="quantity-Barbasol" value="0" min="0">
+            <button onclick="changeQuantity('Barbasol', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Venus.jpg" alt="Venus">
+      <div class="product-details">
+        <h3>Venus</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Venus', -1)">-</button>
+          <input type="number" id="quantity-Venus" value="0" min="0">
+          <button onclick="changeQuantity('Venus', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="razors.jpg" alt="razors">
+      <div class="product-details">
+        <h3>razors</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('razors', -1)">-</button>
+          <input type="number" id="quantity-razors" value="0" min="0">
+          <button onclick="changeQuantity('razors', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Razors2.jpg" alt="Razors2">
+      <div class="product-details">
+        <h3>Razors2</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Razors2', -1)">-</button>
+          <input type="number" id="quantity-Razors2" value="0" min="0">
+          <button onclick="changeQuantity('Razors2', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Vi-John.jpg" alt="Vi-John">
+      <div class="product-details">
+        <h3>Vi-John</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Vi-John', -1)">-</button>
+          <input type="number" id="quantity-Vi-John" value="0" min="0">
+          <button onclick="changeQuantity('Vi-John', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="shavingcream.jpg" alt="shavingcream">
+      <div class="product-details">
+        <h3>shavingcream</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('shavingcream', -1)">-</button>
+          <input type="number" id="quantity-shavingcream" value="0" min="0">
+          <button onclick="changeQuantity('shavingcream', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Gillete.jpg" alt="Gillette">
+      <div class="product-details">
+        <h3>Gillette</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Gillette', -1)">-</button>
+          <input type="number" id="quantity-Gillette" value="0" min="0">
+          <button onclick="changeQuantity('Gillette', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Nads-WaxingStrips.jpg" alt="Nads-WaxingStrips">
+      <div class="product-details">
+        <h3>Nads-WaxingStrips</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Nads-WaxingStrips', -1)">-</button>
+          <input type="number" id="quantity-Nads-WaxingStrips" value="0" min="0">
+          <button onclick="changeQuantity('Nads-WaxingStrips', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Bombae.jpg" alt="Bombae">
+      <div class="product-details">
+        <h3>Bombae </h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Bombae', -1)">-</button>
+          <input type="number" id="quantity-Bombae" value="0" min="0">
+          <button onclick="changeQuantity('Bombae', 1)">+</button>
+      </div>
+    </div>
+  </div>
+     
+      <div class="product">
+          <div class="product-info">
+            <img src="ShavingBrush.jpg" alt="ShavingBrush">
+            <div class="product-details">
+              <h3>ShavingBrush</h3>
+              <p>Price: $<span class="price">10.00</span></p>
+              <p>Availability: <span class="availability">In Stock</span></p>
+            </div>
+            <div class="quantity-controls">
+                <button onclick="changeQuantity('ShavingBrush', -1)">-</button>
+                <input type="number" id="quantity-ShavingBrush" value="0" min="0">
+                <button onclick="changeQuantity('ShavingBrush', 1)">+</button>
+            </div>
+          </div>
+        </div>
+        
+
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(`quantity-${productId}`);
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

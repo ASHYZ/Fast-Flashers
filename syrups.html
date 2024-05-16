@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="washing-powder.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">SYRUPS</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Acineutra.jpg" alt="Acineutra">
+        <div class="product-details">
+          <h3>Acineutra</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Acineutra', -1)">-</button>
+            <input type="number" id="quantity-Acineutra" value="0" min="0">
+            <button onclick="changeQuantity('Acineutra', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="DayQuil.jpg" alt="DayQuil">
+      <div class="product-details">
+        <h3>DayQuil</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('DayQuil', -1)">-</button>
+          <input type="number" id="quantity-DayQuil" value="0" min="0">
+          <button onclick="changeQuantity('DayQuil', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="DigePlex.jpg" alt="Digeplex">
+      <div class="product-details">
+        <h3>Digeplex</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Digeplex', -1)">-</button>
+          <input type="number" id="quantity-Digeplex" value="0" min="0">
+          <button onclick="changeQuantity('Digeplex', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Dybestex.jpg" alt="Dybestex">
+      <div class="product-details">
+        <h3>Dybestex</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Dybestex', -1)">-</button>
+          <input type="number" id="quantity-Dybestex" value="0" min="0">
+          <button onclick="changeQuantity('Dybestex', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Himpyrin.jpg" alt="Himpyrin">
+      <div class="product-details">
+        <h3>Himpyrin</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Himpyrin', -1)">-</button>
+          <input type="number" id="quantity-Himpyrin" value="0" min="0">
+          <button onclick="changeQuantity('Himpyrin', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Nyquil.jpg" alt="Nyquil">
+      <div class="product-details">
+        <h3>Nyquil</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Nyquil', -1)">-</button>
+          <input type="number" id="quantity-Nyquil" value="0" min="0">
+          <button onclick="changeQuantity('Nyquil', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(`quantity-${productId}`);
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

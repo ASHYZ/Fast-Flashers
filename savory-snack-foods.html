@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="washing-powder.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">SAVORY SNACK FOODS</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Haldirams.jpg" alt="Haldirams">
+        <div class="product-details">
+          <h3>Haldirams</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Haldirams', -1)">-</button>
+            <input type="number" id="quantity-Haldirams" value="0" min="0">
+            <button onclick="changeQuantity('Haldirams', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Bhujia Haldirams.jpg" alt="Bhujia Haldirams">
+      <div class="product-details">
+        <h3>Bhujia Haldirams</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Bhujia Haldirams', -1)">-</button>
+          <input type="number" id="quantity-Bhujia Haldirams" value="0" min="0">
+          <button onclick="changeQuantity('Bhujia Haldirams', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Khatta Meetha.jpg" alt="Khatta Meetha">
+      <div class="product-details">
+        <h3>Khatta Meetha</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Khatta Meetha', -1)">-</button>
+          <input type="number" id="quantity-Khatta Meetha" value="0" min="0">
+          <button onclick="changeQuantity('Khatta Meetha', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Kaju Mixture Haldirams.jpg" alt="Kaju Mixture Haldirams">
+      <div class="product-details">
+        <h3>Kaju Mixture Haldirams</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Kaju Mixture Haldirams', -1)">-</button>
+          <input type="number" id="quantity-Kaju Mixture Haldirams" value="0" min="0">
+          <button onclick="changeQuantity('Kaju Mixture Haldirams', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Panchrattan Haldirams.jpg" alt="Panchrattan Haldirams">
+      <div class="product-details">
+        <h3>Panchrattan Haldirams</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Panchrattan Haldirams', -1)">-</button>
+          <input type="number" id="quantity-Panchrattan Haldirams" value="0" min="0">
+          <button onclick="changeQuantity('Panchrattan Haldirams', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(`quantity-${productId}`);
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

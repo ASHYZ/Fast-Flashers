@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="washing-powder.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">TUPPER - WARE</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="containerset.jpg" alt="Container Set">
+        <div class="product-details">
+          <h3>Container Set</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Container Set', -1)">-</button>
+            <input type="number" id="quantity-Container Set" value="0" min="0">
+            <button onclick="changeQuantity('Container Set', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="dryfruitset.jpg" alt="Dry Fruit Set">
+      <div class="product-details">
+        <h3>Dry Fruit Set</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Dry Fruit Set', -1)">-</button>
+          <input type="number" id="quantity-Dry Fruit Set" value="0" min="0">
+          <button onclick="changeQuantity('Dry Fruit Set', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="setof4.jpg" alt=" Set of 4">
+      <div class="product-details">
+        <h3>Set of 4</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity(' Set of 4', -1)">-</button>
+          <input type="number" id="quantity- Set of 4" value="0" min="0">
+          <button onclick="changeQuantity(' Set of 4', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="setoftiffin.jpg" alt="Tiffin set">
+      <div class="product-details">
+        <h3>Tiffin set</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Tiffin set', -1)">-</button>
+          <input type="number" id="quantity-Tiffin set" value="0" min="0">
+          <button onclick="changeQuantity('Tiffin set', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="tiffinsets.jpg" alt="Tiffin Sets">
+      <div class="product-details">
+        <h3>Tiffin Sets</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Tiffin Sets', -1)">-</button>
+          <input type="number" id="quantity-Tiffin Sets" value="0" min="0">
+          <button onclick="changeQuantity('Tiffin Sets', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="spicesset.jpg" alt="Spices Set">
+      <div class="product-details">
+        <h3>Spices Set</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Spices Set', -1)">-</button>
+          <input type="number" id="quantity-Spices Set" value="0" min="0">
+          <button onclick="changeQuantity('Spices Set', 1)">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-info">
+      <img src="tiffinsets.jpg" alt="Tiffin Sets">
+      <div class="product-details">
+        <h3>Tiffin Sets</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Tiffin Sets', -1)">-</button>
+          <input type="number" id="quantity-Tiffin Sets" value="0" min="0">
+          <button onclick="changeQuantity('Tiffin Sets', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="sipups.jpg" alt="Sip ups">
+      <div class="product-details">
+        <h3>Sip ups</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Sip ups', -1)">-</button>
+          <input type="number" id="quantity-Sip ups" value="0" min="0">
+          <button onclick="changeQuantity('Sip ups', 1)">+</button>
+      </div>
+    </div>
+  </div>
+        
+
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(`quantity-${productId}`);
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

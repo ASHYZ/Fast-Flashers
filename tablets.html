@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="washing-powder.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">TABLETS</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Amlamukt.jpg" alt="Amlamukt">
+        <div class="product-details">
+          <h3>Amlamukt</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Amlamukt', -1)">-</button>
+            <input type="number" id="quantity-Amlamukt" value="0" min="0">
+            <button onclick="changeQuantity('Amlamukt', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Cetrizine.jpg" alt="Cetrizine">
+      <div class="product-details">
+        <h3>Cetrizine</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Cetrizine', -1)">-</button>
+          <input type="number" id="quantity-Cetrizine" value="0" min="0">
+          <button onclick="changeQuantity('Cetrizine', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Diclomol.jpg" alt="Diclomol">
+      <div class="product-details">
+        <h3>Diclomol</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Diclomol', -1)">-</button>
+          <input type="number" id="quantity-Diclomol" value="0" min="0">
+          <button onclick="changeQuantity('Diclomol', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Krifen-P.jpg" alt="Krifen-P">
+      <div class="product-details">
+        <h3>Krifen-P</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Krifen-P', -1)">-</button>
+          <input type="number" id="quantity-Krifen-P" value="0" min="0">
+          <button onclick="changeQuantity('Krifen-P', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Paracetamol.jpg" alt="Paracetamol">
+      <div class="product-details">
+        <h3>Paracetamol</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Paracetamol', -1)">-</button>
+          <input type="number" id="quantity-Paracetamol" value="0" min="0">
+          <button onclick="changeQuantity('Paracetamol', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(`quantity-${productId}`);
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

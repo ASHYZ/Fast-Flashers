@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="washing-powder.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">OILS</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Saffola.jpg" alt="Saffola">
+        <div class="product-details">
+          <h3>Saffola</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Saffola', -1)">-</button>
+            <input type="number" id="quantity-Saffola" value="0" min="0">
+            <button onclick="changeQuantity('Saffola', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Saffola Total.jpg" alt="Saffola Total">
+      <div class="product-details">
+        <h3>Saffola Total</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Saffola Total', -1)">-</button>
+          <input type="number" id="quantity-Saffola Total" value="0" min="0">
+          <button onclick="changeQuantity('Saffola Total', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Ghee.jpg" alt="Ghee">
+      <div class="product-details">
+        <h3>Ghee</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Ghee', -1)">-</button>
+          <input type="number" id="quantity-Ghee" value="0" min="0">
+          <button onclick="changeQuantity('Ghee', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Desi Ghee.jpg" alt="Desi Ghee">
+      <div class="product-details">
+        <h3>Desi Ghee</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Desi Ghee', -1)">-</button>
+          <input type="number" id="quantity-Desi Ghee" value="0" min="0">
+          <button onclick="changeQuantity('Desi Ghee', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Fortune Oil.jpg" alt="Fortune Oil">
+      <div class="product-details">
+        <h3>Fortune Oil</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Fortune Oil', -1)">-</button>
+          <input type="number" id="quantity-Fortune Oil" value="0" min="0">
+          <button onclick="changeQuantity('Fortune Oil', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Jharna Ghee.jpg" alt="Jharna Ghee">
+      <div class="product-details">
+        <h3>Jharna Ghee</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Jharna Ghee', -1)">-</button>
+          <input type="number" id="quantity-Jharna Ghee" value="0" min="0">
+          <button onclick="changeQuantity('Jharna Ghee', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Nutrela Gold.jpg" alt="Nutrela Gold">
+      <div class="product-details">
+        <h3>Nutrela Gold</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Nutrela Gold', -1)">-</button>
+          <input type="number" id="quantity-Nutrela Gold" value="0" min="0">
+          <button onclick="changeQuantity('Nutrela Gold', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Simply Vegetable Oil.jpg" alt="Simply Vegetable Oil">
+      <div class="product-details">
+        <h3>Simply Vegetable Oil</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Simply Vegetable Oil', -1)">-</button>
+          <input type="number" id="quantity-Simply Vegetable Oil" value="0" min="0">
+          <button onclick="changeQuantity('Simply Vegetable Oil', 1)">+</button>
+      </div>
+    </div>
+  </div>
+     
+      <div class="product">
+          <div class="product-info">
+            <img src="Vegetable Oil.jpg" alt="Vegetable Oil">
+            <div class="product-details">
+              <h3>Vegetable Oil </h3>
+              <p>Price: $<span class="price">10.00</span></p>
+              <p>Availability: <span class="availability">In Stock</span></p>
+            </div>
+            <div class="quantity-controls">
+                <button onclick="changeQuantity('Vegetable Oil', -1)">-</button>
+                <input type="number" id="quantity-Vegetable Oil" value="0" min="0">
+                <button onclick="changeQuantity('Vegetable Oil', 1)">+</button>
+            </div>
+          </div>
+        </div>
+        
+
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(`quantity-${productId}`);
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

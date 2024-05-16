@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="washing-powder.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">SANITARY PADS</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Whisper.jpg" alt="Whisper">
+        <div class="product-details">
+          <h3>Whisper</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Whisper', -1)">-</button>
+            <input type="number" id="quantity-Whisper value="0" min="0">
+            <button onclick="changeQuantity('Whisper', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Comfy.jpg" alt="Comfy">
+      <div class="product-details">
+        <h3>Comfy</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Comfy', -1)">-</button>
+          <input type="number" id="quantity-Comfy" value="0" min="0">
+          <button onclick="changeQuantity('Comfy', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="StayFree.jpg" alt="StayFree">
+      <div class="product-details">
+        <h3>StayFree</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('StayFree', -1)">-</button>
+          <input type="number" id="quantity-StayFree" value="0" min="0">
+          <button onclick="changeQuantity('StayFree', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Soft-Tampons.jpg" alt="Soft-Tampons">
+      <div class="product-details">
+        <h3>Soft-Tampons</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Soft-Tampons', -1)">-</button>
+          <input type="number" id="quantity-Soft-Tampons" value="0" min="0">
+          <button onclick="changeQuantity('Soft-Tampons', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Sofy.jpg" alt="Sofy">
+      <div class="product-details">
+        <h3>Sofy</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Sofy', -1)">-</button>
+          <input type="number" id="quantity-Sofy" value="0" min="0">
+          <button onclick="changeQuantity('Sofy', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(`quantity-${productId}`);
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>
